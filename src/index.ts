@@ -1,6 +1,6 @@
 /**
- * @file axios入口
- * @author lvhongbin(lvhongbin@baidu.com)
+ * @file server入口
+ * @author hblvsjtu(hblvsjtu@163.com)
  */
 
 const http = require('http');
