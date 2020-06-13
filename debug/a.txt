@@ -1,4 +1,0 @@
-{
-    "next": "b.txt",
-    "message": "this is a.txt"
-}

@@ -1,4 +1,0 @@
-{
-    "next": null,
-    "message": "this is c.txt"
-}
