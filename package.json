@@ -1,6 +1,6 @@
 {
     "name": "my-blog-server",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "my blog server system",
     "keywords": [],
     "main": "dist/myBlogServer.umd.js",
@@ -22,10 +22,9 @@
     "scripts": {
         "build": "tsc --module umd && rollup -c rollup.config.ts && typedoc --out docs --target es5 --theme minimal --mode file src",
         "server": "node ./dist/myBlogServer.es5.js",
-        "build-server": "npm run build && npm run server",
-        "start": "nodemon",
+        "start": "nodemon /dist/myBlogServer.es5.js",
         "pretty": "pretty-quick",
-        "genlog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+        "genlog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md docs && git commit --amend --no-edit",
         "precommit": "lint-staged",
         "commit": "git-cz",
         "test": "jest --coverage",
@@ -40,7 +39,7 @@
         "travis-deploy-once": "travis-deploy-once"
     },
     "dependencies": {
-        "tspexpress": "^0.0.3"
+        "tspexpress": "0.0.8"
     },
     "devDependencies": {
         "@commitlint/cli": "^7.6.1",
