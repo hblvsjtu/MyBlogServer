@@ -928,7 +928,19 @@ img { max-width: 100%; }
 			<a href="globals.html#model_data_dir" class="tsd-kind-icon">MODEL_<wbr>DATA_<wbr>DIR</a>
 		</li>
 		<li class=" tsd-kind-variable tsd-is-not-exported">
+			<a href="globals.html#connection" class="tsd-kind-icon">connection</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-is-not-exported">
+			<a href="globals.html#env" class="tsd-kind-icon">env</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-is-not-exported">
 			<a href="globals.html#fs" class="tsd-kind-icon">fs</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-is-not-exported">
+			<a href="globals.html#mysql" class="tsd-kind-icon">mysql</a>
+		</li>
+		<li class=" tsd-kind-variable">
+			<a href="globals.html#mysqlconnnectconfig" class="tsd-kind-icon">mysql<wbr>Connnect<wbr>Config</a>
 		</li>
 		<li class=" tsd-kind-variable tsd-is-not-exported">
 			<a href="globals.html#path" class="tsd-kind-icon">path</a>
@@ -958,6 +970,9 @@ img { max-width: 100%; }
 			<a href="globals.html#readfile" class="tsd-kind-icon">read<wbr>File</a>
 		</li>
 		<li class=" tsd-kind-function">
+			<a href="globals.html#sql" class="tsd-kind-icon">sql</a>
+		</li>
+		<li class=" tsd-kind-function">
 			<a href="globals.html#sum" class="tsd-kind-icon">sum</a>
 		</li>
 		<li class=" tsd-kind-function">
@@ -970,6 +985,16 @@ img { max-width: 100%; }
 		<div class="tsd-panel tsd-typography">
 			<h1 id="myblogserver">myBlogServer</h1>
 			<p>博客系统后台</p>
+			<h2 id="-">使用方法</h2>
+			<pre><code class="language-bash">npm i <span class="hljs-comment"># 安装依赖</span>
+
+npm run build <span class="hljs-comment"># 编译文件</span>
+npm run server <span class="hljs-comment"># 启动服务器</span>
+npm run start <span class="hljs-comment"># 启动监控</span>
+npm run pretty <span class="hljs-comment"># 美化代码</span>
+npm run genlog <span class="hljs-comment"># 创建changelog</span>
+npm run commit <span class="hljs-comment"># 提交代码</span>
+nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测试</span></code></pre>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
@@ -990,7 +1015,11 @@ img { max-width: 100%; }
 							<li class="tsd-kind-variable"><a href="globals.html#base_dir" class="tsd-kind-icon">BASE_<wbr>DIR</a></li>
 							<li class="tsd-kind-variable"><a href="globals.html#default_file" class="tsd-kind-icon">DEFAULT_<wbr>FILE</a></li>
 							<li class="tsd-kind-variable"><a href="globals.html#model_data_dir" class="tsd-kind-icon">MODEL_<wbr>DATA_<wbr>DIR</a></li>
+							<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#connection" class="tsd-kind-icon">connection</a></li>
+							<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#env" class="tsd-kind-icon">env</a></li>
 							<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#fs" class="tsd-kind-icon">fs</a></li>
+							<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#mysql" class="tsd-kind-icon">mysql</a></li>
+							<li class="tsd-kind-variable"><a href="globals.html#mysqlconnnectconfig" class="tsd-kind-icon">mysql<wbr>Connnect<wbr>Config</a></li>
 							<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#path" class="tsd-kind-icon">path</a></li>
 							<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#pexpress" class="tsd-kind-icon">pexpress</a></li>
 							<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#server" class="tsd-kind-icon">server</a></li>
@@ -1005,6 +1034,7 @@ img { max-width: 100%; }
 							<li class="tsd-kind-function"><a href="globals.html#iscreateprofile" class="tsd-kind-icon">is<wbr>Create<wbr>Profile</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#islogin" class="tsd-kind-icon">is<wbr>Login</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#readfile" class="tsd-kind-icon">read<wbr>File</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#sql" class="tsd-kind-icon">sql</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#sum" class="tsd-kind-icon">sum</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#updateblog" class="tsd-kind-icon">update<wbr>Blog</a></li>
 						</ul>
@@ -1020,7 +1050,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">BASE_<wbr>DIR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;../../MyBlog/dist&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/4b92258/src/utils/common.ts#L3">utils/common.ts:3</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/common.ts#L3">utils/common.ts:3</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1030,7 +1060,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>FILE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"index.html"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;index.html&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/4b92258/src/utils/common.ts#L5">utils/common.ts:5</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/common.ts#L5">utils/common.ts:5</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1040,7 +1070,27 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">MODEL_<wbr>DATA_<wbr>DIR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;../debug&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/4b92258/src/utils/common.ts#L7">utils/common.ts:7</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/common.ts#L7">utils/common.ts:7</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-not-exported">
+				<a name="connection" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> connection</h3>
+				<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;mysql.createConnection(mysqlConnnectConfig)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in db/index.ts:4</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-not-exported">
+				<a name="env" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> env</h3>
+				<div class="tsd-signature tsd-kind-icon">env<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;process.env.NODE_ENV</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in conf/db.ts:1</li>
 					</ul>
 				</aside>
 			</section>
@@ -1050,7 +1100,27 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">fs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;fs&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in utils/io.ts:1</li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/io.ts#L1">utils/io.ts:1</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-not-exported">
+				<a name="mysql" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> mysql</h3>
+				<div class="tsd-signature tsd-kind-icon">mysql<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;mysql&#x27;)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in db/index.ts:1</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="mysqlconnnectconfig" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagLet">Let</span> mysql<wbr>Connnect<wbr>Config</h3>
+				<div class="tsd-signature tsd-kind-icon">mysql<wbr>Connnect<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MysqlConnnectConfig</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in conf/db.ts:3</li>
 					</ul>
 				</aside>
 			</section>
@@ -1060,9 +1130,9 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;path&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/4b92258/src/utils/common.ts#L1">utils/common.ts:1</a></li>
-						<li>Defined in utils/io.ts:2</li>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/4b92258/src/index.ts#L14">index.ts:14</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/common.ts#L1">utils/common.ts:1</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/io.ts#L2">utils/io.ts:2</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/index.ts#L14">index.ts:14</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1072,7 +1142,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">pexpress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;tspexpress&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/4b92258/src/index.ts#L15">index.ts:15</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/index.ts#L15">index.ts:15</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1082,7 +1152,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PExpress</span><span class="tsd-signature-symbol"> =&nbsp;pexpress.create()</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/4b92258/src/index.ts#L17">index.ts:17</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/index.ts#L17">index.ts:17</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1099,7 +1169,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in utils/io.ts:4</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/io.ts#L4">utils/io.ts:4</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1131,7 +1201,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in controller/getDetail.ts:1</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/getDetail.ts#L1">controller/getDetail.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1162,7 +1232,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in controller/getList.ts:1</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/getList.ts#L1">controller/getList.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1187,13 +1257,13 @@ img { max-width: 100%; }
 				<a name="iscreateprofile" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Create<wbr>Profile</h3>
 				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">is<wbr>Create<wbr>Profile<span class="tsd-signature-symbol">(</span>userName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Create<wbr>Profile<span class="tsd-signature-symbol">(</span>userName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in controller/user.ts:5</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/user.ts#L15">controller/user.ts:15</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1205,7 +1275,7 @@ img { max-width: 100%; }
 								<h5>password: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -1213,13 +1283,13 @@ img { max-width: 100%; }
 				<a name="islogin" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Login</h3>
 				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">is<wbr>Login<span class="tsd-signature-symbol">(</span>userName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Login<span class="tsd-signature-symbol">(</span>userName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in controller/user.ts:1</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/user.ts#L4">controller/user.ts:4</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1231,7 +1301,7 @@ img { max-width: 100%; }
 								<h5>password: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -1245,7 +1315,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in utils/io.ts:20</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/io.ts#L19">utils/io.ts:19</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1259,6 +1329,29 @@ img { max-width: 100%; }
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="sql" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> sql</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">sql<span class="tsd-signature-symbol">(</span>sql<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in db/index.ts:8</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>sql: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
 				<a name="sum" class="tsd-anchor"></a>
 				<h3>sum</h3>
 				<ul class="tsd-signatures tsd-kind-function">
@@ -1268,7 +1361,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/4b92258/src/utils/index.ts#L8">utils/index.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/index.ts#L8">utils/index.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1294,7 +1387,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in controller/update.ts:1</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/update.ts#L1">controller/update.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>

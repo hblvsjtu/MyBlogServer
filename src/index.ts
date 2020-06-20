@@ -115,7 +115,7 @@ server.post(
             if (!userName || !password) {
                 throw new Error('user information is not found!');
             }
-            if (isLogin(userName, password)) {
+            if (await isLogin(userName, password)) {
                 const result: SuccessModel = new SuccessModel({data: '登陆成功！'});
                 res.end(JSON.stringify(result));
             } else {
@@ -138,7 +138,7 @@ server.post(
             if (!userName || !password) {
                 throw new Error('user information is not found!');
             }
-            if (isCreateProfile(userName, password)) {
+            if (await isCreateProfile(userName, password)) {
                 const result: SuccessModel = new SuccessModel({data: '创建成功！'});
                 res.end(JSON.stringify(result));
             } else {

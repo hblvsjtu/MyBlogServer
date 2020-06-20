@@ -42,3 +42,11 @@ interface SuccessModel extends BaseModel {
 interface FailModel extends BaseModel {
     code: number;
 }
+
+interface MysqlConnnectConfig {
+    host: string;
+    user: string;
+    password: string;
+    port: string;
+    database: string;
+}
