@@ -1,10 +1,10 @@
 interface ListRequestParams {
-    authod?: string;
+    author?: string;
     keyword?: string;
 }
 
 interface DetailRequestParams {
-    authod?: string;
+    author?: string;
     keyword?: string;
 }
 
@@ -12,8 +12,8 @@ interface Blog {
     id: number;
     title: string;
     content: any;
-    creatTime: string;
-    authod: string;
+    createTime: string;
+    author: string;
 }
 
 type List = Array<Blog>;
@@ -50,3 +50,38 @@ interface MysqlConnnectConfig {
     port: string;
     database: string;
 }
+
+interface SqlInsertResult {
+    fieldCount: number;
+    affectedRows: number;
+    insertId: number;
+    serverStatus: number;
+    warningCount: number;
+    message: string;
+    protocol41: boolean;
+    changedRows: number;
+}
+
+interface SqlUpdateResult {
+    fieldCount: number;
+    affectedRows: number;
+    insertId: number;
+    serverStatus: number;
+    warningCount: number;
+    message: string;
+    protocol41: boolean;
+    changedRows: number;
+}
+
+interface SqlDeleteResult {
+    fieldCount: number;
+    affectedRows: number;
+    insertId: number;
+    serverStatus: number;
+    warningCount: number;
+    message: string;
+    protocol41: boolean;
+    changedRows: number;
+}
+
+type SqlCheckResult = List;

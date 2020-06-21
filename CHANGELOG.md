@@ -1,4 +1,23 @@
 <a name="0.0.2"></a>
+## 0.0.2 (2020-06-21)
+
+
+### Features
+
+* **add tspexpress:** add tspexpress and nodemon ([4b92258](https://github.com/hblvsjtu/MyBlogServer/commit/4b92258))
+* **defaultDir:** make default Dir to visit ([9bbd649](https://github.com/hblvsjtu/MyBlogServer/commit/9bbd649))
+* **fileRead:** fileRead method ([3a6df2f](https://github.com/hblvsjtu/MyBlogServer/commit/3a6df2f))
+* **init:** initial myBlogServer project ([707487a](https://github.com/hblvsjtu/MyBlogServer/commit/707487a))
+* **InterceptManager:** InterceptManager with promise API ([bbadc8f](https://github.com/hblvsjtu/MyBlogServer/commit/bbadc8f))
+* **mysql:** add mysql and finish router user sql ([b0f3f00](https://github.com/hblvsjtu/MyBlogServer/commit/b0f3f00))
+* **nodemon:** build nodemon script ([282c9bc](https://github.com/hblvsjtu/MyBlogServer/commit/282c9bc))
+* **route complete:** route complete and update dependence tspexpress ([995add9](https://github.com/hblvsjtu/MyBlogServer/commit/995add9))
+* **router blogs:** router blogs with add/delete/update/check ([9f2acb9](https://github.com/hblvsjtu/MyBlogServer/commit/9f2acb9))
+* **staticPath:** buildStaticPath method ([9475453](https://github.com/hblvsjtu/MyBlogServer/commit/9475453))
+
+
+
+<a name="0.0.2"></a>
 ## 0.0.2 (2020-06-20)
 
 

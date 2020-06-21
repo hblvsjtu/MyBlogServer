@@ -951,6 +951,12 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-variable tsd-is-not-exported">
 			<a href="globals.html#server" class="tsd-kind-icon">server</a>
 		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#createblog" class="tsd-kind-icon">create<wbr>Blog</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#deleteblog" class="tsd-kind-icon">delete<wbr>Blog</a>
+		</li>
 		<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
 			<a href="globals.html#filereadpromise" class="tsd-kind-icon">file<wbr>Read<wbr>Promise</a>
 		</li>
@@ -1028,6 +1034,8 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-function"><a href="globals.html#createblog" class="tsd-kind-icon">create<wbr>Blog</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#deleteblog" class="tsd-kind-icon">delete<wbr>Blog</a></li>
 							<li class="tsd-kind-function tsd-has-type-parameter tsd-is-not-exported"><a href="globals.html#filereadpromise" class="tsd-kind-icon">file<wbr>Read<wbr>Promise</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#getdetail" class="tsd-kind-icon">get<wbr>Detail</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#getlist" class="tsd-kind-icon">get<wbr>List</a></li>
@@ -1050,7 +1058,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">BASE_<wbr>DIR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;../../MyBlog/dist&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/common.ts#L3">utils/common.ts:3</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/utils/common.ts#L3">utils/common.ts:3</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1060,7 +1068,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>FILE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"index.html"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;index.html&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/common.ts#L5">utils/common.ts:5</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/utils/common.ts#L5">utils/common.ts:5</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1070,7 +1078,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">MODEL_<wbr>DATA_<wbr>DIR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;../debug&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/common.ts#L7">utils/common.ts:7</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/utils/common.ts#L7">utils/common.ts:7</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1080,7 +1088,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;mysql.createConnection(mysqlConnnectConfig)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in db/index.ts:4</li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/db/index.ts#L4">db/index.ts:4</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1090,7 +1098,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">env<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;process.env.NODE_ENV</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in conf/db.ts:1</li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/conf/db.ts#L1">conf/db.ts:1</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1100,7 +1108,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">fs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;fs&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/io.ts#L1">utils/io.ts:1</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/utils/io.ts#L1">utils/io.ts:1</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1110,7 +1118,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">mysql<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;mysql&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in db/index.ts:1</li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/db/index.ts#L1">db/index.ts:1</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1120,7 +1128,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">mysql<wbr>Connnect<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MysqlConnnectConfig</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in conf/db.ts:3</li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/conf/db.ts#L3">conf/db.ts:3</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1130,9 +1138,8 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;path&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/common.ts#L1">utils/common.ts:1</a></li>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/io.ts#L2">utils/io.ts:2</a></li>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/index.ts#L14">index.ts:14</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/utils/common.ts#L1">utils/common.ts:1</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/utils/io.ts#L2">utils/io.ts:2</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1142,7 +1149,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">pexpress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;tspexpress&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/index.ts#L15">index.ts:15</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/index.ts#L11">index.ts:11</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1152,13 +1159,73 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PExpress</span><span class="tsd-signature-symbol"> =&nbsp;pexpress.create()</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/index.ts#L17">index.ts:17</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/index.ts#L13">index.ts:13</a></li>
 					</ul>
 				</aside>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="createblog" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Blog</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">create<wbr>Blog<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlInsertResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in controller/blogs.ts:30</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>author<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>create<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlInsertResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="deleteblog" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> delete<wbr>Blog</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">delete<wbr>Blog<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlDeleteResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in controller/blogs.ts:25</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>id: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlDeleteResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
 				<a name="filereadpromise" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> file<wbr>Read<wbr>Promise</h3>
@@ -1169,7 +1236,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/io.ts#L4">utils/io.ts:4</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/utils/io.ts#L4">utils/io.ts:4</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1195,30 +1262,22 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<a name="getdetail" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Detail</h3>
 				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Detail<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">List</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Detail<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlCheckResult</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/getDetail.ts#L1">controller/getDetail.ts:1</a></li>
+								<li>Defined in controller/blogs.ts:15</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>authod<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>keyword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-									</li>
-								</ul>
+								<h5>id: <span class="tsd-signature-type">number</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">List</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlCheckResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -1226,13 +1285,13 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<a name="getlist" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>List</h3>
 				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>List<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">List</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>List<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlCheckResult</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/getList.ts#L1">controller/getList.ts:1</a></li>
+								<li>Defined in controller/blogs.ts:3</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1241,7 +1300,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 								<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
-										<h5>authod<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+										<h5>author<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 									</li>
 									<li class="tsd-parameter">
 										<h5>keyword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
@@ -1249,7 +1308,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 								</ul>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">List</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlCheckResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -1263,7 +1322,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/user.ts#L15">controller/user.ts:15</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/controller/user.ts#L14">controller/user.ts:14</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1289,7 +1348,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/user.ts#L4">controller/user.ts:4</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/controller/user.ts#L4">controller/user.ts:4</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1315,7 +1374,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/io.ts#L19">utils/io.ts:19</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/utils/io.ts#L19">utils/io.ts:19</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1338,7 +1397,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in db/index.ts:8</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/db/index.ts#L8">db/index.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1361,7 +1420,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/utils/index.ts#L8">utils/index.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b0f3f00/src/utils/index.ts#L8">utils/index.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1381,13 +1440,13 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<a name="updateblog" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> update<wbr>Blog</h3>
 				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">update<wbr>Blog<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Blog</span></li>
+					<li class="tsd-signature tsd-kind-icon">update<wbr>Blog<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlUpdateResult</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/94f1c9e/src/controller/update.ts#L1">controller/update.ts:1</a></li>
+								<li>Defined in controller/blogs.ts:20</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1399,7 +1458,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 								<h5>content: <span class="tsd-signature-type">any</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Blog</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SqlUpdateResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>

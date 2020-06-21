@@ -3,15 +3,11 @@
  * @author lvhongbin(lvhongbin@baidu.com)
  */
 
-import {BASE_DIR, DEFAULT_FILE} from './utils/common';
-import getList from './controller/getList';
-import getDetail from './controller/getDetail';
+import {BASE_DIR, DEFAULT_FILE, MODEL_DATA_DIR} from './utils/common';
 import {readFile} from './utils/io';
-import {MODEL_DATA_DIR} from '../src/utils/common';
 import {SuccessModel, FailModel} from './model/resModel';
-import {updateBlog} from './controller/update';
+import {updateBlog, getList, getDetail, deleteBlog, createBlog} from './controller/blogs';
 import {isLogin, isCreateProfile} from './controller/user';
-const path = require('path');
 const pexpress = require('tspexpress');
 
 const server: PExpress = pexpress.create();
@@ -24,40 +20,47 @@ server.use((next: Next): Next | Promise<Next> => {
 });
 
 // 获取博客列表
-server.get('/api/blog/list', ({req, res}: Next): Next | Promise<Next> => {
-    const listQuery: ListRequestParams = req.query || {};
-    try {
-        const list: List = getList(listQuery);
-        const result: SuccessModel = new SuccessModel(list);
-        res.end(JSON.stringify(result));
-    } catch (err) {
-        const result: FailModel = new FailModel(err.message);
-        res.end(JSON.stringify(result));
+server.get(
+    '/api/blog/list',
+    async ({req, res}: Next): Promise<Next> => {
+        try {
+            const list: SqlCheckResult = await getList(req.query as ListRequestParams);
+            const result: SuccessModel = new SuccessModel(list);
+            res.end(JSON.stringify(result));
+        } catch (err) {
+            const result: FailModel = new FailModel(err.message);
+            res.end(JSON.stringify(result));
+        }
+        return {req, res};
     }
-    return {req, res};
-});
+);
 
 // 获取博客详情
-server.get('/api/blog/detail', ({req, res}: Next): Next | Promise<Next> => {
-    const detailQuery: DetailRequestParams = req.query || {};
-    try {
-        const list: List = getDetail(detailQuery);
-        const result: SuccessModel = new SuccessModel(list);
-        res.end(JSON.stringify(result));
-    } catch (err) {
-        const result: FailModel = new FailModel(err.message);
-        res.end(JSON.stringify(result));
+server.get(
+    '/api/blog/detail',
+    async ({req, res}: Next): Promise<Next> => {
+        try {
+            const id: number = (req.query as Blog).id;
+            const blog: Blog = (await getDetail(id))[0];
+            const result: SuccessModel = new SuccessModel(blog);
+            res.end(JSON.stringify(result));
+        } catch (err) {
+            const result: FailModel = new FailModel(err.message);
+            res.end(JSON.stringify(result));
+        }
+        return {req, res};
     }
-    return {req, res};
-});
+);
 
 // 新建博客
 server.post(
     '/api/blog/new',
     async ({req, res}: Next): Promise<Next> => {
         try {
-            const data: Array<FileData> = await readFile(path.join(MODEL_DATA_DIR, 'a1.json'));
-            const result: SuccessModel = new SuccessModel(data);
+            const blog = req.body;
+            const id = (await createBlog(blog as Blog)).insertId;
+            const result: SuccessModel = new SuccessModel({id});
+            // const data: Array<FileData> = await readFile(path.join(MODEL_DATA_DIR, 'a1.json'));
             res.end(JSON.stringify(result));
         } catch (err) {
             const result: FailModel = new FailModel(err.message);
@@ -76,8 +79,8 @@ server.post(
             if (!id) {
                 throw new Error('id is not found!');
             }
-            const blog: Blog = updateBlog(id, content);
-            const result: SuccessModel = new SuccessModel(blog);
+            const changedRows: number = (await updateBlog(id, content)).changedRows;
+            const result: SuccessModel = new SuccessModel({changedRows});
             res.end(JSON.stringify(result));
         } catch (err) {
             const result: FailModel = new FailModel(err.message);
@@ -92,11 +95,8 @@ server.post(
     '/api/blog/delete',
     async ({req, res}: Next): Promise<Next> => {
         try {
-            const {id} = req.body;
-            if (!id) {
-                throw new Error('id is not found!');
-            }
-            const result: SuccessModel = new SuccessModel({id});
+            const affectedRows: number = (await deleteBlog(req.body.id)).affectedRows;
+            const result: SuccessModel = new SuccessModel({affectedRows});
             res.end(JSON.stringify(result));
         } catch (err) {
             const result: FailModel = new FailModel(err.message);
