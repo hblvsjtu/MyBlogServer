@@ -1,4 +1,4 @@
-import sql from '../db/index';
+import {sql} from '../db/index';
 
 export const getList = async ({author, keyword}: ListRequestParams): Promise<SqlCheckResult> => {
     let sqlText: string = 'select id, title, content, createtime, author from blogs where 1=1';

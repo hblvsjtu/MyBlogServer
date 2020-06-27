@@ -51,6 +51,11 @@ interface MysqlConnnectConfig {
     database: string;
 }
 
+interface RedisConnnectConfig {
+    host: string;
+    port: string;
+}
+
 interface SqlInsertResult {
     fieldCount: number;
     affectedRows: number;
@@ -85,3 +90,16 @@ interface SqlDeleteResult {
 }
 
 type SqlCheckResult = List;
+
+interface CookieObject {
+    [key: string]: any;
+}
+
+interface Profile {
+    id: number;
+    username: string;
+    password: string;
+    realname: string;
+    state: number;
+    token: string;
+}

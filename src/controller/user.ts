@@ -1,20 +1,18 @@
-import sql from '../db/index';
-import get from 'lodash/get';
+import {sql} from '../db/index';
 
-export const isLogin = async function(userName: string, password: string): Promise<boolean> {
+export const login = async function(userName: string, password: string): Promise<List> {
     try {
         const sqlText = `select id from users where username='${userName}' and password='${password}'`;
-        const result = await sql(sqlText);
-        return !!get(result, '[0].id');
+        return await sql(sqlText);
     } catch (err) {
         throw err;
     }
 };
 
-export const isCreateProfile = async function(
+export const createProfile = async function(
     userName: string,
     password: string
-): Promise<boolean> {
+): Promise<SqlInsertResult> {
     try {
         const isExistSameUsername = !!(
             await sql(`select id from users where username='${userName}'`)
@@ -23,8 +21,7 @@ export const isCreateProfile = async function(
             throw new Error('账户名已存在，请登陆或者另起账户名！');
         }
         const sqlText = `insert into users(username, \`password\`, realname, state) values('${userName}', '${password}', '${userName}', 1);`;
-        const result = await sql(sqlText);
-        return !!result.insertId;
+        return await sql(sqlText);
     } catch (err) {
         throw err;
     }
