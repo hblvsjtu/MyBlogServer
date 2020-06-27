@@ -928,6 +928,9 @@ img { max-width: 100%; }
 			<a href="globals.html#model_data_dir" class="tsd-kind-icon">MODEL_<wbr>DATA_<wbr>DIR</a>
 		</li>
 		<li class=" tsd-kind-variable">
+			<a href="globals.html#port" class="tsd-kind-icon">PORT</a>
+		</li>
+		<li class=" tsd-kind-variable">
 			<a href="globals.html#redis_expires" class="tsd-kind-icon">REDIS_<wbr>EXPIRES</a>
 		</li>
 		<li class=" tsd-kind-variable tsd-is-not-exported">
@@ -1083,6 +1086,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 							<li class="tsd-kind-variable"><a href="globals.html#base_dir" class="tsd-kind-icon">BASE_<wbr>DIR</a></li>
 							<li class="tsd-kind-variable"><a href="globals.html#default_file" class="tsd-kind-icon">DEFAULT_<wbr>FILE</a></li>
 							<li class="tsd-kind-variable"><a href="globals.html#model_data_dir" class="tsd-kind-icon">MODEL_<wbr>DATA_<wbr>DIR</a></li>
+							<li class="tsd-kind-variable"><a href="globals.html#port" class="tsd-kind-icon">PORT</a></li>
 							<li class="tsd-kind-variable"><a href="globals.html#redis_expires" class="tsd-kind-icon">REDIS_<wbr>EXPIRES</a></li>
 							<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#client" class="tsd-kind-icon">client</a></li>
 							<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#connection" class="tsd-kind-icon">connection</a></li>
@@ -1141,7 +1145,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">BASE_<wbr>DIR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;../../MyBlog/dist&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/common.ts#L3">utils/common.ts:3</a></li>
+						<li>Defined in conf/common.ts:3</li>
 					</ul>
 				</aside>
 			</section>
@@ -1151,7 +1155,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>FILE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"index.html"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;index.html&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/common.ts#L5">utils/common.ts:5</a></li>
+						<li>Defined in conf/common.ts:5</li>
 					</ul>
 				</aside>
 			</section>
@@ -1161,7 +1165,17 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">MODEL_<wbr>DATA_<wbr>DIR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;../debug&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/common.ts#L7">utils/common.ts:7</a></li>
+						<li>Defined in conf/common.ts:7</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="port" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> PORT</h3>
+				<div class="tsd-signature tsd-kind-icon">PORT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3000</span><span class="tsd-signature-symbol"> =&nbsp;3000</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in conf/common.ts:11</li>
 					</ul>
 				</aside>
 			</section>
@@ -1171,7 +1185,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">REDIS_<wbr>EXPIRES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1 * 60</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/common.ts#L9">utils/common.ts:9</a></li>
+						<li>Defined in conf/common.ts:9</li>
 					</ul>
 				</aside>
 			</section>
@@ -1181,7 +1195,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;redis.createClient(redisConfig)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/db/index.ts#L28">db/index.ts:28</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/db/index.ts#L25">db/index.ts:25</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1191,7 +1205,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;mysql.createConnection(mysqlConfig)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/db/index.ts#L11">db/index.ts:11</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/db/index.ts#L8">db/index.ts:8</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1201,7 +1215,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">env<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;process.env.NODE_ENV</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/conf/db.ts#L1">conf/db.ts:1</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/conf/db.ts#L1">conf/db.ts:1</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1211,7 +1225,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">fs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;fs&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/io.ts#L1">utils/io.ts:1</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/utils/io.ts#L1">utils/io.ts:1</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1221,7 +1235,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">mysql<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;mysql&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/db/index.ts#L1">db/index.ts:1</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/db/index.ts#L1">db/index.ts:1</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1231,7 +1245,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">mysql<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MysqlConnnectConfig</span><span class="tsd-signature-symbol"> =&nbsp;mysqlConnnectConfig</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/conf/db.ts#L32">conf/db.ts:32</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/conf/db.ts#L32">conf/db.ts:32</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1241,7 +1255,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">mysql<wbr>Connnect<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MysqlConnnectConfig</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/conf/db.ts#L3">conf/db.ts:3</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/conf/db.ts#L3">conf/db.ts:3</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1251,8 +1265,8 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;path&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/common.ts#L1">utils/common.ts:1</a></li>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/io.ts#L2">utils/io.ts:2</a></li>
+						<li>Defined in conf/common.ts:1</li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/utils/io.ts#L2">utils/io.ts:2</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1262,17 +1276,17 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">pexpress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;tspexpress&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/index.ts#L7">index.ts:7</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/index.ts#L7">index.ts:7</a></li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-not-exported">
 				<a name="redis" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> redis</h3>
-				<div class="tsd-signature tsd-kind-icon">redis<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&quot;redis&quot;)</span></div>
+				<div class="tsd-signature tsd-kind-icon">redis<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;redis&#x27;)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/db/index.ts#L2">db/index.ts:2</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/db/index.ts#L2">db/index.ts:2</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1282,7 +1296,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">redis<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RedisConnnectConfig</span><span class="tsd-signature-symbol"> =&nbsp;redisConnnectConfig</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/conf/db.ts#L33">conf/db.ts:33</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/conf/db.ts#L33">conf/db.ts:33</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1292,7 +1306,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">redis<wbr>Connnect<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RedisConnnectConfig</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/conf/db.ts#L4">conf/db.ts:4</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/conf/db.ts#L4">conf/db.ts:4</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1302,7 +1316,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 				<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PExpress</span><span class="tsd-signature-symbol"> =&nbsp;pexpress.create()</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/index.ts#L17">index.ts:17</a></li>
+						<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/index.ts#L18">index.ts:18</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1319,7 +1333,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in router/check.ts:4</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/router/check.ts#L4">router/check.ts:4</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1345,7 +1359,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/controller/blogs.ts#L32">controller/blogs.ts:32</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/controller/blogs.ts#L30">controller/blogs.ts:30</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1382,7 +1396,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in router/blogs.ts:37</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/router/blogs.ts#L36">router/blogs.ts:36</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1413,7 +1427,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/controller/user.ts#L14">controller/user.ts:14</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/controller/user.ts#L12">controller/user.ts:12</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1439,7 +1453,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in router/user.ts:76</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/router/user.ts#L76">router/user.ts:76</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1470,7 +1484,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/controller/blogs.ts#L27">controller/blogs.ts:27</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/controller/blogs.ts#L25">controller/blogs.ts:25</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1493,7 +1507,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in router/blogs.ts:71</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/router/blogs.ts#L70">router/blogs.ts:70</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1524,7 +1538,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/io.ts#L4">utils/io.ts:4</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/utils/io.ts#L4">utils/io.ts:4</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1556,7 +1570,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in router/blogs.ts:22</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/router/blogs.ts#L21">router/blogs.ts:21</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1587,7 +1601,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in router/blogs.ts:7</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/router/blogs.ts#L6">router/blogs.ts:6</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1618,7 +1632,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/controller/blogs.ts#L17">controller/blogs.ts:17</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/controller/blogs.ts#L15">controller/blogs.ts:15</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1641,7 +1655,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in utils/time.ts:1</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/utils/time.ts#L1">utils/time.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1664,7 +1678,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/controller/blogs.ts#L5">controller/blogs.ts:5</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/controller/blogs.ts#L3">controller/blogs.ts:3</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1695,7 +1709,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/controller/user.ts#L5">controller/user.ts:5</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/controller/user.ts#L3">controller/user.ts:3</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1721,7 +1735,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in router/user.ts:14</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/router/user.ts#L14">router/user.ts:14</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1752,7 +1766,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in router/user.ts:59</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/router/user.ts#L59">router/user.ts:59</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1783,7 +1797,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/io.ts#L19">utils/io.ts:19</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/utils/io.ts#L19">utils/io.ts:19</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1806,7 +1820,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/db/index.ts#L63">db/index.ts:63</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/db/index.ts#L59">db/index.ts:59</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1829,7 +1843,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/db/index.ts#L72">db/index.ts:72</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/db/index.ts#L67">db/index.ts:67</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1852,7 +1866,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/db/index.ts#L44">db/index.ts:44</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/db/index.ts#L41">db/index.ts:41</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1875,7 +1889,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/db/index.ts#L33">db/index.ts:33</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/db/index.ts#L30">db/index.ts:30</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1904,7 +1918,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in utils/cookie.ts:1</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/utils/cookie.ts#L1">utils/cookie.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1930,7 +1944,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/db/index.ts#L15">db/index.ts:15</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/db/index.ts#L12">db/index.ts:12</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1953,7 +1967,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/utils/index.ts#L8">utils/index.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/utils/index.ts#L8">utils/index.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1979,7 +1993,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/ac32ad4/src/controller/blogs.ts#L22">controller/blogs.ts:22</a></li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/controller/blogs.ts#L20">controller/blogs.ts:20</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2005,7 +2019,7 @@ nom run <span class="hljs-built_in">test</span> <span class="hljs-comment"># 测
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in router/blogs.ts:53</li>
+								<li>Defined in <a href="https://github.com/hblvsjtu/MyBlogServer/blob/b9c0d67/src/router/blogs.ts#L52">router/blogs.ts:52</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>

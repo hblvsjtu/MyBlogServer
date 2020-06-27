@@ -3,7 +3,7 @@
  * @author lvhongbin(lvhongbin@baidu.com)
  */
 
-import {BASE_DIR, DEFAULT_FILE} from './utils/common';
+import {BASE_DIR, DEFAULT_FILE} from './conf/common';
 const pexpress = require('tspexpress');
 import {
     getBlogDetailRouter,
@@ -13,9 +13,10 @@ import {
     updateBlogRouter
 } from './router/blogs';
 import {createProfileRouter, loginRouter, logoutRouter} from './router/user';
+import {PORT} from './conf/common';
 
 const server: PExpress = pexpress.create();
-server.setStaticPath(BASE_DIR, {defaultFile: DEFAULT_FILE});
+// server.setStaticPath(BASE_DIR, {defaultFile: DEFAULT_FILE});
 
 // 设定默认的返回格式
 server.use((next: Next): Next | Promise<Next> => {
@@ -49,4 +50,4 @@ server.post('/api/user/logout', logoutRouter);
 // 新建账号
 server.post('/api/user/create', createProfileRouter);
 
-server.listen(3000, () => console.log(`server has started, have fun!`));
+server.listen(PORT, () => console.log(`server has started, have fun!`));

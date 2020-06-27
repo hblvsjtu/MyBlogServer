@@ -43,7 +43,7 @@ export const loginRouter = async ({req, res}: Next): Promise<Next> => {
                 token
             };
             redisSet(token, req.session);
-            const result: SuccessModel = new SuccessModel({data: '登陆成功！'});
+            const result: SuccessModel = new SuccessModel({userId, token});
             res.end(JSON.stringify(result));
         } else {
             throw new Error('登陆失败！');

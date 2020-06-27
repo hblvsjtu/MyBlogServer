@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 const redis = require('redis');
-import {REDIS_EXPIRES} from '../utils/common';
+import {REDIS_EXPIRES} from '../conf/common';
 import _ from 'lodash';
 import {mysqlConfig, redisConfig} from '../conf/db';
 
