@@ -14,9 +14,17 @@ import {
 } from './router/blogs';
 import {createProfileRouter, loginRouter, logoutRouter} from './router/user';
 import {PORT} from './conf/common';
+import {writeAccessLog} from './utils/io';
 
 const server: PExpress = pexpress.create();
 // server.setStaticPath(BASE_DIR, {defaultFile: DEFAULT_FILE});
+
+// 访问日志
+server.use((next: Next): Next | Promise<Next> => {
+    const {method, headers, url} = next.req;
+    writeAccessLog(`${method} -- ${url} -- ${headers['user-agent']} -- ${Date.now()}`);
+    return next;
+});
 
 // 设定默认的返回格式
 server.use((next: Next): Next | Promise<Next> => {

@@ -22,7 +22,7 @@
     "scripts": {
         "build": "cross-env NODE_ENV=production && tsc --module umd && rollup -c rollup.config.ts && typedoc --out docs --target es5 --theme minimal --mode file src",
         "server": "cross-env NODE_ENV=production && && node ./dist/myBlogServer.es5.js",
-        "start": "cross-env NODE_ENV=production && nodemon ./dist/myBlogServer.es5.js",
+        "start": "nodemon ./dist/myBlogServer.es5.js",
         "redis": "redis-server",
         "pretty": "pretty-quick",
         "genlog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md docs && git commit --amend --no-edit",
