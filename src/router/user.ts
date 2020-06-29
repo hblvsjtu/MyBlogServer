@@ -9,6 +9,7 @@ import setCookie from '../utils/cookie';
 import {getExpiresTime} from '../utils/time';
 import get from 'lodash/get';
 import {redisSet, redisGet, redisDel} from '../db/index';
+import {writeErrorLog} from '../utils/io';
 
 // 登陆博客
 export const loginRouter = async ({req, res}: Next): Promise<Next> => {
@@ -51,6 +52,8 @@ export const loginRouter = async ({req, res}: Next): Promise<Next> => {
     } catch (err) {
         const result: FailModel = new FailModel(err.message);
         res.end(JSON.stringify(result));
+        const {method, url} = req;
+        writeErrorLog(`${Date.now()} -- ${method} -- ${url} -- ${err.message}`);
     }
     return {req, res};
 };
@@ -68,6 +71,8 @@ export const logoutRouter = async ({req, res}: Next): Promise<Next> => {
     } catch (err) {
         const result: FailModel = new FailModel(err.message);
         res.end(JSON.stringify(result));
+        const {method, url} = req;
+        writeErrorLog(`${Date.now()} -- ${method} -- ${url} -- ${err.message}`);
     }
     return {req, res};
 };
@@ -89,6 +94,8 @@ export const createProfileRouter = async ({req, res}: Next): Promise<Next> => {
     } catch (err) {
         const result: FailModel = new FailModel(err.message);
         res.end(JSON.stringify(result));
+        const {method, url} = req;
+        writeErrorLog(`${Date.now()} -- ${method} -- ${url} -- ${err.message}`);
     }
     return {req, res};
 };

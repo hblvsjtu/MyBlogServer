@@ -1,6 +1,7 @@
 import {SuccessModel, FailModel} from '../model/resModel';
 import {updateBlog, getList, getDetail, deleteBlog, createBlog} from '../controller/blogs';
 import checkProfile from './check';
+import {writeErrorLog} from '../utils/io';
 
 // 获取博客列表
 export const getBlogListRouter = async ({req, res}: Next): Promise<Next> => {
@@ -13,6 +14,10 @@ export const getBlogListRouter = async ({req, res}: Next): Promise<Next> => {
     } catch (err) {
         const result: FailModel = new FailModel(err.message);
         res.end(JSON.stringify(result));
+        const {method, url, body} = req;
+        writeErrorLog(
+            `${Date.now()} -- ${method} -- ${url} -- ${body && body.userId} -- ${err.message}`
+        );
     }
     return {req, res};
 };
@@ -20,14 +25,18 @@ export const getBlogListRouter = async ({req, res}: Next): Promise<Next> => {
 // 获取博客详情
 export const getBlogDetailRouter = async ({req, res}: Next): Promise<Next> => {
     try {
-        const {userId, token} = req.body;
+        const {userId, token, id} = req.body;
         const profile: Profile = await checkProfile(userId, token);
-        const blog: Blog = (await getDetail(profile.id))[0];
+        const blog: Blog = (await getDetail(id))[0];
         const result: SuccessModel = new SuccessModel(blog);
         res.end(JSON.stringify(result));
     } catch (err) {
         const result: FailModel = new FailModel(err.message);
         res.end(JSON.stringify(result));
+        const {method, url, body} = req;
+        writeErrorLog(
+            `${Date.now()} -- ${method} -- ${url} -- ${body && body.userId} -- ${err.message}`
+        );
     }
     return {req, res};
 };
@@ -44,6 +53,10 @@ export const createBlogRouter = async ({req, res}: Next): Promise<Next> => {
     } catch (err) {
         const result: FailModel = new FailModel(err.message);
         res.end(JSON.stringify(result));
+        const {method, url, body} = req;
+        writeErrorLog(
+            `${Date.now()} -- ${method} -- ${url} -- ${body && body.userId} -- ${err.message}`
+        );
     }
     return {req, res};
 };
@@ -62,6 +75,10 @@ export const updateBlogRouter = async ({req, res}: Next): Promise<Next> => {
     } catch (err) {
         const result: FailModel = new FailModel(err.message);
         res.end(JSON.stringify(result));
+        const {method, url, body} = req;
+        writeErrorLog(
+            `${Date.now()} -- ${method} -- ${url} -- ${body && body.userId} -- ${err.message}`
+        );
     }
     return {req, res};
 };
@@ -77,6 +94,10 @@ export const deleteBlogRouter = async ({req, res}: Next): Promise<Next> => {
     } catch (err) {
         const result: FailModel = new FailModel(err.message);
         res.end(JSON.stringify(result));
+        const {method, url, body} = req;
+        writeErrorLog(
+            `${Date.now()} -- ${method} -- ${url} -- ${body && body.userId} -- ${err.message}`
+        );
     }
     return {req, res};
 };

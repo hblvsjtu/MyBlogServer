@@ -14,7 +14,7 @@ import {
 } from './router/blogs';
 import {createProfileRouter, loginRouter, logoutRouter} from './router/user';
 import {PORT} from './conf/common';
-import {writeAccessLog} from './utils/io';
+import {writeAccessLog, writeEventLog} from './utils/io';
 
 const server: PExpress = pexpress.create();
 // server.setStaticPath(BASE_DIR, {defaultFile: DEFAULT_FILE});
@@ -58,4 +58,7 @@ server.post('/api/user/logout', logoutRouter);
 // 新建账号
 server.post('/api/user/create', createProfileRouter);
 
-server.listen(PORT, () => console.log(`server has started, have fun!`));
+server.listen(PORT, () => {
+    console.log(`server has started, have fun!`);
+    writeEventLog(`${Date.now()} -- server has started, have fun!`);
+});

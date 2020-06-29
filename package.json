@@ -27,6 +27,7 @@
         "pretty": "pretty-quick",
         "genlog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md docs && git commit --amend --no-edit",
         "precommit": "lint-staged",
+        "online": "pm2 restart ecosystem.config.js",
         "commit": "git-cz",
         "test": "jest --coverage",
         "test:watch": "jest --coverage --watch",
@@ -44,6 +45,7 @@
         "@types/mysql": "^2.15.14",
         "lodash": "^4.17.15",
         "mysql": "^2.18.1",
+        "pm2": "^4.4.0",
         "redis": "^3.0.2",
         "tspexpress": "0.0.9"
     },
